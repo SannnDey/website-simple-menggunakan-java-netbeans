@@ -26,8 +26,12 @@ public class NewServlet extends HttpServlet {
             out.println("nav a { color: #fff; margin: 0 15px; text-decoration: none; }");
             out.println("main { padding: 20px; }");
             out.println("footer { background-color: #333; color: #fff; text-align: center; padding: 10px; position: fixed; width: 100%; bottom: 0; }");
-            out.println("h1, h2 { color: #333; }");
+            out.println("h1 { color: #fff; }");
+            out.println("h2 { color: #333; }");
             out.println(".content { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }");
+            out.println(".section { margin-bottom: 20px; }");
+            out.println(".news-item, .article-item { margin-bottom: 15px; }");
+            out.println(".news-item h3, .article-item h3 { margin: 0 0 5px; }");
             out.println("</style>");
             out.println("</head>");
             out.println("<body>");
@@ -35,18 +39,35 @@ public class NewServlet extends HttpServlet {
             out.println("<h1>Informasi Teknologi</h1>");
             out.println("</header>");
             out.println("<nav>");
-            out.println("<a href=\"#\">Berita Terbaru</a>");
-            out.println("<a href=\"#\">Artikel</a>");
-            out.println("<a href=\"#\">Sumber Daya</a>");
+            out.println("<a href=\"NewServlet\">Berita Terbaru</a>");
+            out.println("<a href=\"ArtikelServlet\">Artikel</a>");
+            out.println("<a href=\"SumberDayaServlet\">Sumber Daya</a>");
             out.println("</nav>");
             out.println("<main>");
             out.println("<div class=\"content\">");
-            out.println("<h2>Selamat Datang di Portal Teknologi</h2>");
-            out.println("<p>Temukan berita terbaru, artikel mendalam, dan sumber daya teknologi di sini.</p>");
+
+            // Section Berita Terbaru
+            out.println("<div class=\"section\">");
+            out.println("<h2>Berita Teknologi Terbaru</h2>");
+            out.println("<div class=\"news-item\">");
+            out.println("<h3>Berita 1: Inovasi Teknologi AI</h3>");
+            out.println("<p>Teknologi AI terus berkembang dengan cepat, membawa inovasi baru di berbagai bidang...</p>");
+            out.println("</div>");
+            out.println("<div class=\"news-item\">");
+            out.println("<h3>Berita 2: Perkembangan 5G di Dunia</h3>");
+            out.println("<p>Jaringan 5G semakin meluas, memberikan kecepatan internet yang jauh lebih cepat dan lebih stabil...</p>");
+            out.println("</div>");
+            out.println("<div class=\"news-item\">");
+            out.println("<h3>Berita 3: Keamanan Cyber di Era Digital</h3>");
+            out.println("<p>Keamanan cyber menjadi perhatian utama dengan semakin meningkatnya ancaman digital...</p>");
+            out.println("</div>");
+            out.println("</div>");
+
+
             out.println("</div>");
             out.println("</main>");
             out.println("<footer>");
-            out.println("<p>&copy; 2024 Informasi Teknologi. All rights reserved.</p>");
+            out.println("<p>&copy; 2024 Teknologi Informasi. All rights reserved.</p>");
             out.println("</footer>");
             out.println("</body>");
             out.println("</html>");
