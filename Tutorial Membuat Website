@@ -4,3 +4,5 @@ cara membuat website simple dengan menggunakan java netbeans IDE versi 20
 3. isikan namanya dengan NewServlet sebagai index main webnya
 4. buat lagi class java servlet baru dengan nama ArtikelServlet sebagai halaman ke 2 di web
 5. terakhir buatkan class java servlet dengan nama SumberDayaServlet sebagai halaman ke 3 di web
+
+dan untuk menjalankan websitenya harap klik kanan pada mouse di file javanya lalu run
